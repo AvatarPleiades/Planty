@@ -1,4 +1,11 @@
 <?php
+
+function register_footer_menu()
+{
+  register_nav_menu('footer_menu', __('Footer Menu'));
+}
+add_action('after_setup_theme', 'register_footer_menu');
+
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 function theme_enqueue_styles()
 {

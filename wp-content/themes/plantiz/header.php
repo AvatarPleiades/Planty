@@ -8,17 +8,13 @@
 
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
-<header class="header directionRow">
-            <a href="index.php" class="header__logo">
+        <header class="site-header directionRow">
+            <a href="index.php">
             <img src="wp-content/themes/plantiz/assets/images/Logo_miniature.png" alt="Logo Planty" id="logo">
             </a>
-            <nav class="nav">
-                <ul>
-
-                <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
-                <button onclick="window.location.href= 'plantiiz/commander/';" class="button-commander"> Commander </button>	
-
-            </ul>
+            <nav class="navbar">
+                    <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+                    <button onclick="window.location.href= 'plantiiz/commander/';" class="button-commander"> Commander </button>	
             </nav>
         </header>
             
