@@ -3,41 +3,52 @@
 body * {
    font-family: 'Syne', sans-serif;
 }
-/* On applique du noir sur les paragraphes */
-p {
+
+.directionRow { /*Class pour donner le Flex Rox*/
+   display: flex
+}
+
+/****** Header ******/
+ul { /*On remet le padding et le margin des listes à 0 pour éviter le décalage*/
+   display: flex;
+   align-items: center;
+   font-size: 17px;
+   text-decoration: none;
    color: #000000;
 }
-/* La classe 'hover-effect' permettra de créer un effet de zoom quand l'on passera la souris par dessus les elements images enfants  */
-.hover-effect img {
-   transition: all 0.33s ease-in-out;
-   transform: scale(1) translateY(0px);
-}
-.hover-effect img:hover {
-   transition: all 0.33s ease-in-out;
-   transform: scale(1.05) translateY(-10px);
+
+li { /*Propriété des boutons hébergements et activités*/
+   padding: 14px 25px;
+   font-size: 16px;
 }
 
-/* HEADER */
+.header { /*Taille du header et espace entre le logo et le menu + centrage du logo sur l'axe vertical*/
+   justify-content: space-between;
+   align-items: center;
+}
 
+#logo {
+   margin-left: 37px;
+   width: 100%;
+}
 
-#site-header.sticky-top {
-   position: sticky;
-   z-index: 10;
-   top: 0;
-   background-color: #C8D6CF;
+.button-commander {
+   width: 236px;
+   height: 80px;
+   background-color: #DC9F96;
+   color: white;
+   border: none;
+   font-weight: 700;
+   font-size: 16px;
+   cursor: pointer;
 }
 
 /* LIENS DU MENU */ 
 li.menu-item a {
-   color: #313332 !important;
+   color: #000000 !important;
    display: inline-block;
    padding: 10px 25px;
    border-radius: 10px;
    text-align: center;
-}
-
-li.menu-item a:hover,
-li.menu-item.current-menu-item a {
-   color: #F4CA52 !important;
-   text-decoration: none !important;
+   text-decoration: none;
 }
