@@ -10,13 +10,15 @@
     <?php wp_body_open(); ?>
 <header class="header directionRow">
             <a href="index.php" class="header__logo">
-            <img src="wp-content\themes\plantiz\assets\images\Logo_miniature.png" alt="Logo Planty" id="logo">
+            <img src="wp-content/themes/plantiz/assets/images/Logo_miniature.png" alt="Logo Planty" id="logo">
             </a>
             <nav class="nav">
                 <ul>
-                <?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'link_before' => '<span itemprop="name">', 'link_after' => '</span>' ) ); ?>
+
+                <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
                 <button onclick="window.location.href= 'plantiiz/commander/';" class="button-commander"> Commander </button>	
-                </ul>
+
+            </ul>
             </nav>
         </header>
             

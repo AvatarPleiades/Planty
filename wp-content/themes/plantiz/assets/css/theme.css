@@ -4,12 +4,12 @@ body * {
    font-family: 'Syne', sans-serif;
 }
 
-.directionRow { /*Class pour donner le Flex Rox*/
+.directionRow { /*Class pour donner le Flex Row*/
    display: flex
 }
 
 /****** Header ******/
-ul { /*On remet le padding et le margin des listes à 0 pour éviter le décalage*/
+ul {
    display: flex;
    align-items: center;
    font-size: 17px;
@@ -17,7 +17,7 @@ ul { /*On remet le padding et le margin des listes à 0 pour éviter le décalag
    color: #000000;
 }
 
-li { /*Propriété des boutons hébergements et activités*/
+li { 
    padding: 14px 25px;
    font-size: 16px;
 }
@@ -32,6 +32,16 @@ li { /*Propriété des boutons hébergements et activités*/
    width: 100%;
 }
 
+/* LIENS DU MENU */ 
+li.menu-item a {
+   color: #000000 !important;
+   display: inline-block;
+   padding: 14px 25px;
+   font-size: 16px;
+   text-align: center;
+   text-decoration: none;
+}
+
 .button-commander {
    width: 236px;
    height: 80px;
@@ -41,14 +51,4 @@ li { /*Propriété des boutons hébergements et activités*/
    font-weight: 700;
    font-size: 16px;
    cursor: pointer;
-}
-
-/* LIENS DU MENU */ 
-li.menu-item a {
-   color: #000000 !important;
-   display: inline-block;
-   padding: 10px 25px;
-   border-radius: 10px;
-   text-align: center;
-   text-decoration: none;
 }
