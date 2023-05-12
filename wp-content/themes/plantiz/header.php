@@ -9,8 +9,8 @@
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
         <header class="site-header directionRow">
-            <a href="index.php">
-            <img src="wp-content/themes/plantiz/assets/images/Logo_miniature.png" alt="Logo Planty" id="logo">
+            <a href="<?php get_stylesheet_directory_uri(); ?> /plantiiz/index.php">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Logo_miniature.png" alt="Logo Planty" id="logo">
             </a>
             <nav class="navbar">
                     <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
