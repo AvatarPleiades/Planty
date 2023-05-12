@@ -8,7 +8,7 @@
 
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
-        <header class="site-header directionRow">
+        <header class="site-header sticky-top directionRow">
             <a href="<?php get_stylesheet_directory_uri(); ?> /plantiiz/index.php">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Logo_miniature.png" alt="Logo Planty" id="logo">
             </a>

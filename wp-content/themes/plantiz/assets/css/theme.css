@@ -28,6 +28,13 @@ li {
    box-shadow: 0px 8px 9px 0px rgba(0,0,0,0.3);
 }
 
+.site-header.sticky-top {
+   position: sticky;
+   z-index: 10;
+   top: 0;
+   background-color: #ffffff;
+}
+
 #logo {
    margin-left: 37px;
    width: 100%;
