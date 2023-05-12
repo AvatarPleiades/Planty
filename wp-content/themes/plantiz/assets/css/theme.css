@@ -54,6 +54,10 @@ li.menu-item a {
    cursor: pointer;
 }
 
+.button-commander:hover {
+   background-color: #C02E44;
+}
+
 /* FOOTER */
 
 #footer {
