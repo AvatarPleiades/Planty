@@ -9,7 +9,7 @@ body * {
 }
 
 /* HEADER */
-.navbar {
+.navbar { /*Réglage de la barre de navigation*/
    display: flex;
    align-items: center;
    font-size: 17px;
@@ -17,31 +17,31 @@ body * {
    color: #000000;
 }
 
-li { 
+li { /*Réglages liste*/
    padding: 14px 40px;
    font-size: 16px;
 }
 
-.site-header { 
+.site-header { /*Réglage du header*/
    justify-content: space-between;
    align-items: center;
    box-shadow: 0px 8px 9px 0px rgba(0,0,0,0.2);
 }
 
-.site-header.sticky-top {
+.site-header.sticky-top { /*Réglage pour rendre le header sticky*/
    position: sticky;
    z-index: 10;
    top: 0;
    background-color: #ffffff;
 }
 
-#logo {
+#logo { /*Réglage logo*/
    margin-left: 37px;
    width: 100%;
 }
 
 /* LIENS DU MENU */ 
-li.menu-item a {
+li.menu-item a { /*Réglage des liens du menu*/
    color: #000000 !important;
    display: inline-block;
    padding: 14px 25px;
@@ -50,7 +50,7 @@ li.menu-item a {
    text-decoration: none;
 }
 
-.button-commander {
+.button-commander { /*Réglage bouton commander*/
    width: 236px;
    height: 80px;
    background-color: #DC9F96;
@@ -61,25 +61,23 @@ li.menu-item a {
    cursor: pointer;
 }
 
-.button-commander:hover {
+.button-commander:hover { /*Hover du bouton commander*/
    background-color: #C02E44;
 }
 
 /* FOOTER */
-
-#footer {
+#footer { /*Réglage footer*/
    display: flex;
    justify-content: center;
 }
 
 /* FORM COMMANDER */
-
-.container_quantity {
+.container_quantity { /*Réglages du bloc form commander*/
    display: flex;
    margin-top: 15px;
 }
 
-.wpcf7-form-control-wrap .custom_select {
+.wpcf7-form-control-wrap .custom_select { /*Réglages liste déroulante nombre de commande*/
    -webkit-appearance: none;
    -moz-appearance: none;
    appearance: none;
@@ -91,19 +89,19 @@ li.menu-item a {
    text-align: center;
 }
 
-.more {
+.more { /* Réglages bouton + */
    height: 27.5px;
    border-radius: 0 10px 0 0;
    border-bottom: 0.5px solid white;
 }
 
-.less {
+.less { /*Réglages bouton - */
    height: 27.5px;
    border-radius: 0 0 10px 0;
    border-top: 0.5px solid white;
 }
 
-.more, .less {
+.more, .less { /*Réglages boutons + et -*/
    display: table;
    height: 25px;
    width: 31px;
@@ -111,11 +109,11 @@ li.menu-item a {
    cursor: pointer;
 }
 
-.more:hover, .less:hover {
+.more:hover, .less:hover { /*Hover boutons + et - */
    background-color: #C02E44;
 }
 
-.spinbox p {
+.spinbox p { /* Réglages boutons + et - */
    display: table-cell;
    vertical-align: middle;
    text-align: center;
@@ -124,7 +122,7 @@ li.menu-item a {
    color: white;
 }
 
-.buttonOK {
+.buttonOK { /*Réglages bouton envoyer*/
    height: 50px;
    width: 95px;
    background-color: #DC9F96;
@@ -137,10 +135,15 @@ li.menu-item a {
    cursor: pointer;
 }
 
-.buttonOK:hover {
+.buttonOK:hover { /*Hover bouton envoyer*/
    background-color: #C02E44;
 }
 
-.border-right {
+.border-right { /*Création de la barre de séparation blanche*/
    border-right: solid 2px #ffffff;
 }
+
+/* FORM NOUS RENCONTRER */
+.elementor-15 .elementor-element.elementor-element-3e43524 .premium-cf7-container input.wpcf7-submit { /*Placement du envoyer*/
+   margin-left: 130px;
+} 
