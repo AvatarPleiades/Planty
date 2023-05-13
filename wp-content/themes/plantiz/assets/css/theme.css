@@ -20,6 +20,12 @@ body * {
 li { /*Réglages liste*/
    padding: 14px 40px;
    font-size: 16px;
+   list-style: none;
+}
+
+li a{
+   color:black;
+   margin-right: 20px;
 }
 
 .site-header { /*Réglage du header*/

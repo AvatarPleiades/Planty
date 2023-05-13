@@ -14,6 +14,7 @@
             </a>
             <nav class="navbar">
                     <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+                    <li><a title="Admin" href="http://localhost/plantiiz/wp-admin/">Admin</a></li>
                     <button onclick="window.location.href= 'plantiiz/commander/';" class="button-commander"> Commander </button>	
             </nav>
         </header>
