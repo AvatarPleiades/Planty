@@ -71,3 +71,76 @@ li.menu-item a {
    display: flex;
    justify-content: center;
 }
+
+/* FORM COMMANDER */
+
+.container_quantity {
+   display: flex;
+   margin-top: 15px;
+}
+
+.wpcf7-form-control-wrap .custom_select {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   height: 50px;
+   width: 35px;
+   border: none;
+   border-radius: 10px 0 0px 10px;
+   margin-top: 0px;
+   text-align: center;
+}
+
+.more {
+   height: 27.5px;
+   border-radius: 0 10px 0 0;
+   border-bottom: 0.5px solid white;
+}
+
+.less {
+   height: 27.5px;
+   border-radius: 0 0 10px 0;
+   border-top: 0.5px solid white;
+}
+
+.more, .less {
+   display: table;
+   height: 25px;
+   width: 31px;
+   background-color: #DC9F96;
+   cursor: pointer;
+}
+
+.more:hover, .less:hover {
+   background-color: #C02E44;
+}
+
+.spinbox p {
+   display: table-cell;
+   vertical-align: middle;
+   text-align: center;
+   font-weight: 400;
+   font-size: 18.5px;
+   color: white;
+}
+
+.buttonOK {
+   height: 50px;
+   width: 95px;
+   background-color: #DC9F96;
+   font-size: 15px;
+   color: white;
+   font-weight: 400;
+   margin-left: 11px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.buttonOK:hover {
+   background-color: #C02E44;
+}
+
+.border-right {
+   border-right: solid 2px #ffffff;
+}
