@@ -11,6 +11,7 @@ body * {
 /* HEADER */
 .navbar { /*Réglage de la barre de navigation*/
    display: flex;
+   flex-flow: row wrap;
    align-items: center;
    font-size: 17px;
    text-decoration: none;
@@ -32,6 +33,7 @@ li a{
    justify-content: space-between;
    align-items: center;
    box-shadow: 0px 8px 9px 0px rgba(0,0,0,0.2);
+   flex-flow: row wrap;
 }
 
 .site-header.sticky-top { /*Réglage pour rendre le header sticky*/
@@ -46,11 +48,40 @@ li a{
    width: 100%;
 }
 
+
+@media screen and (min-width: 360px max-width: 596px){
+
+   nav {
+      flex-direction: column;
+   }
+   .navbar{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 10px;
+ }
+   #logo {
+      margin-top: 10px;
+   }
+
+}
+
+@media screen and (max-width: 360px){
+   .navbar{
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+ }
+   #logo {
+      margin-top: 10px;
+   }
+
+}
+
 /* LIENS DU MENU */ 
 li.menu-item a { /*Réglage des liens du menu*/
    color: #000000 !important;
    display: inline-block;
-   padding: 14px 25px;
    font-size: 16px;
    text-align: center;
    text-decoration: none;
@@ -152,4 +183,4 @@ li.menu-item a { /*Réglage des liens du menu*/
 /* FORM NOUS RENCONTRER */
 .elementor-15 .elementor-element.elementor-element-3e43524 .premium-cf7-container input.wpcf7-submit { /*Placement du envoyer*/
    margin-left: 130px;
-} 
+}
