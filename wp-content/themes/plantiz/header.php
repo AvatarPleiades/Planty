@@ -33,7 +33,6 @@
 				<button onclick="window.location.href= 'planty_wp/commander/';" class="button-commander"> Commander </button>	
 		 	</div>
 		</div>
-	</nav>
-            
+	</nav>    
 <div id="container">
 <main id="content" role="main">
